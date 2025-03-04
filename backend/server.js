@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(cors("*"));
+app.use(cors({origin: "*"));
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/post", postRoute);
 app.use("/api/v1/comment", commentRoute);
