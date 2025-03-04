@@ -24,7 +24,7 @@ export const webhook = async (req, res) => {
     });
   }
 
-  console.log(evt.data);
+ 
 
   if (evt.type === "user.created") {
     const newUser = new User({
